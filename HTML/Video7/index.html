@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Form for learning input and forms </h1>
+    <form action="post"></form>
+    <!-- The GET method is limited to a maximum number of characters, while the POST method has no such limitation. This is because the GET method sends data through the resource URL, which is limited in length, while the POST method sends data through the HTTP message body, which has no such limitation. -->
+
+    <!-- We can write label and input tag inside <div></div> tag to get new lines  -->
+    <div>
+        <label for="Username">Enter Username : </label>
+        <input type="text" name="Username" placeholder="Enter your Username">
+    </div>
+
+    <div>
+        <label for="Password">Enter Password : </label>
+        <input type="text" name="Password" placeholder="Enter your Password">
+    </div>
+
+    <div>
+        <input type="radio" id="male" name="Gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="Gender" value="female">
+        <label for="female">Female</label>
+    </div>
+
+    <div>
+        <input type="checkbox" name="Subscribe" id="Subscribe" value="Yes">
+        <label for="Subscribe">Subscribe to Weekly Updates </label>
+    </div>
+
+    <div>
+        <label for="Comments">Enter Your Comments here </label>
+        <textarea name="Comments" id="Comments" cols="50" rows="4"></textarea>
+    </div>
+
+    <div>
+        <select name="Courses">
+            <option value="Btech">BTech</option>
+            <option value="BCA">BCA</option>
+            <option value="MBA">MBA</option>
+        </select>
+    </div>
+
+</body>
+
+</html>
