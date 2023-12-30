@@ -1,0 +1,11 @@
+/* We denote classes in css using dot(.) 
+We denote id using # */
+.red{
+    color: antiquewhite;
+}
+.bg-yellow{
+    color: rgb(75, 252, 81);
+}
+#firstdiv{
+    background-color: brown;
+}
