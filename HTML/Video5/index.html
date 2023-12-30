@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="Yuta_JJK.jpg" alt="Yuta Okkutsu">
+    <!-- alt is used when image is not available , then String inside alt is displayed -->
+    <img src="Yuta_JJK2.jpg" alt="Yuta ">
+    <!-- We can adjust the size of image using width and height keyword 
+        There values are measured in pixels
+    It is good practice to use these during webpage making-->
+    <img width="1000" height="1000" src="download.jpg" alt="Yuta JJK">
+    <br>
+
+    <table>
+        <!-- In the first <tr></tr> We set the table heading using <th></th> tag : th means table heading
+        From the Second <tr></tr> We set the data in the table using <td></td> tag : td means table data -->
+
+        <!-- we can add caption using the <caption> </caption> tag  -->
+        <caption>Table Example</caption>
+
+        <!-- We can add table header and table footer using <thead></thead> tag and <tfoot></tfoot> tag -->
+        <thead>TABLE HEADER</thead>
+        <tr>
+            <th>Name</th>
+            <th>Cource</th>
+            <th>CGPA</th>
+        </tr>
+        <tr>
+            <td>Kushagra</td>
+            <td>Btech CSE</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Noddy</td>
+            <td>BCA</td>
+            <td>9.9</td>
+        </tr>
+        <!-- We can use rowspan and colspan with <td></td> -->
+        <tr>
+            <td colspan="2">Rishi</td>
+            <td rowspan="2">10</td>
+        </tr>
+        <tr>
+            <td colspan="2">Saumya</td>
+            
+        </tr>
+    </table>
+    <tfoot>TABLE FOOTER</tfoot>
+
+
+
+
+    <!-- There are 3 types of Lists : 
+    Unordered List : Display items using bullets
+    Ordered List : Displays items using numbers,alphabets,etc.
+    Definition List : Displays items as in a dictionary .  -->
+    <ul>
+        <li>Kushagra</li>
+        <li>Noddy</li>
+        <li>Rishi</li>
+    </ul>
+
+    <ol>
+        <li>Kushagra</li>
+        <li>Noddy</li>
+        <li>Rishi</li>
+    </ol>
+
+    <!-- We can customize the type like  -->
+    <ul type="square">
+        <li>Kushagra</li>
+        <li>Noddy</li>
+        <li>Rishi</li>
+    </ul>
+</body>
+</html>
