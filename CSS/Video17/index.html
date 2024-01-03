@@ -1,0 +1,103 @@
+<!-- 
+    CSS selectors allows us to select specific elements and apply styles to them .
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* This is an Element Selector 
+            Its drawback is that all elements having name div (in this example ) will get the effect  */
+        div{
+            background-color: antiquewhite;
+        }
+
+
+        /* This is an example of class selector */
+        .blue{
+            background-color: blue;
+        }
+
+        /* This is an example of ID selector  */
+        #purple{
+            background-color: purple;
+        }
+
+        /* This is a example of child selector  
+           Used when we want to style something inside div,span,etc
+           This will only work when p tag is enclosed by div . If p is enclosed by something which is enclosed 
+           by div , then this will not work . For this to work we use Descendant Selector .  
+        */
+        /* div > p{
+            color: chocolate;
+            background-color: rgb(13, 49, 49);
+        } */
+
+        /* This is an example of Descendant Selector  */
+        div p{
+            color: yellowgreen;
+            background-color: yellow;
+        }
+
+        /* This is an example of Universal Selector  */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Pseudo Selectors  */
+        a:visited{
+            /* Once Visited the link turns yellowgreen */
+            color: yellowgreen;
+        }
+        a:link{
+            /* Non Visited link will be of green color  */
+            color: green;
+        }
+        a:active{
+            /* When you click the link becomes brown for a short interval of time  */
+            background-color: brown;
+        }
+        a:hover{
+            background-color: blueviolet
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        I am a div 
+    </div>
+    <br>
+    <div>
+        I am another div 
+    </div>
+    <br>
+    <div class="blue">
+        Inside div of class blue .
+    </div>
+    <br>
+    <div id="purple">
+        Inside div of id purple . 
+    </div>
+    <br>
+    <!-- <div>
+        <p>I am inside paragraph of div </p>
+    </div> -->
+    <br>
+    <div>
+        <article>
+            <p>
+                I am inside div , inside article , inside paragraph . 
+            </p>
+        </article>
+    </div>
+    <br>
+    <a href="https://www.soap2day.com">Watch Movies</a>
+    <br>
+    <a href="https://www.bing.com">Go to Bing</a>
+</body>
+</html>
