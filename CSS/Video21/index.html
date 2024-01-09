@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        h3{
+            color: rgb(100, 97, 132);
+        }
+        .yellow{
+            color:yellow
+        }
+        .cred{
+            color: red; 
+        }
+        .cpurple{
+            color: purple;
+        }
+        /* Attribute Selector */
+        [data-x=a]{
+            color: red;
+        }
+        h2 > p{
+            color: violet !important;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Specifity : Determines which CSS selector is the strongest match</h1>
+    <h2>
+        inline style > ID selector > class Selector or Attribute Selector > Element Selector > Universal Selector
+        <p style="color: cadetblue;">
+            inline selector is the most specific type of selector . 
+            We can overide it using !important
+        </p>
+    </h2>
+    <h3 class="yellow cred cpurple ">
+        Discipline > Motivation 
+    </h3>
+    <p data-x="a">
+        Attribute Selector example
+    </p>
+</body>
+</html>
